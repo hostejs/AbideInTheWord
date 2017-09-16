@@ -97,7 +97,6 @@
                         // Assign the start verse
                         verseDisplayStart = chap + 1;
                     }
-                    
                     // Assign the end verse
                     if ((chap + totalVersesNeeded) <= numberVerses) {
                         verseDisplayEnd = (chap + totalVersesNeeded);
@@ -149,8 +148,8 @@
     </script>
 </head>
 <body onload="Initializer();">    
-    <div style="float:left;">
-        <input type="button" value="plan" onclick="setplan();" /><br />
+    <div style="width:100%;align:middle;">
+        <input type="button" value="plan" onclick="setplan();" /> 
         <select id="books">
             <option>Gen</option>
             <option>Exod</option>
@@ -218,10 +217,9 @@
             <option>3John</option>
             <option>Jude</option>
             <option>Rev</option>
-        </select><br/>
-        <input type="text" id="pace" /><br />
+        </select> <input type="text" id="pace" />
     </div>
-    <div id="output" style="float:left;">
+    <div id="output">
 
     </div>
 </body>
