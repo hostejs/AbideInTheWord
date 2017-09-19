@@ -263,7 +263,7 @@
         body {
           font-family: 'Raleway', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
           font-weight: 400;
-          line-height: 1.85;
+          line-height: 1.6;
           color: #333; }
 
         p,
@@ -460,9 +460,27 @@
         #numVerses {
             float: left;
         }
+
+        .btn-primary-bl{
+          background-color: #357edd;
+          border-radius: .5rem;
+          border-color: #357edd;          
+          color: #fff;
+        }
+        
+        .btn-primary-bl:hover, .btn-primary-bl:focus, .btn-primary-bl:active {
+              color: #fff;
+              background-color: #357edd;
+        }
+
+        .btn-success-gn{
+          background-color:  #19a974;
+          border-radius: .5rem;
+        }
         
         #savedDataMessage{
             background-color: #ffde37;
+            border-radius: .5rem;
             font-size: 12px;
             font-weight: bold;
         }
@@ -589,12 +607,12 @@
                 <input type="number" id="txtNumVerses" value="85" min="1" max="9999" maxlength="4" onkeypress="javascript: if (this.value.length >= this.maxLength) { event.preventDefault(); return false; } if (event.keyCode == 13 || event.keyCode == 45 || event.keyCode == 46 || event.keyCode == 69 || event.keyCode == 101 || event.keyCode == 32) { event.preventDefault(); return false; }" />
             </div>
             <div>
-                <input type="button" value="Add" onclick="AddPlan();" />
+                <input type="button" value="Add" class="btn-primary-bl" onclick="AddPlan();" />
             </div>
         </fieldset>        
     </form>
     <div id="dvSavedReading" class="hidden">
-        <div class="thin">
+        <div style="font-size:36px;">
             Saved Reading
         </div>
         <div id="savedDataMessage">
@@ -747,7 +765,7 @@
 
         //document.getElementById('plan').value = planLines.join('\r\n');
         document.getElementById('output').innerHTML = planLinks.join('</br>');
-
+        document.getElementById('dvSavedReading').classList.remove('hidden');
         breaddb.transaction('prog', 'readwrite').objectStore('prog').add(planLinks);
     }
     </script>
