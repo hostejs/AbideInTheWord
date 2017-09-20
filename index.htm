@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,7 +6,7 @@
     <title>Abide in the Word</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         /**
          * furtive - A forward-thinking, CSS micro-framework. Minimal by design.
@@ -21,7 +21,8 @@
          * Remove default margin.
          */
         body {
-          margin: 0; }
+            margin: 0;
+        }
 
         /* HTML5 display definitions
            ========================================================================== */
@@ -33,13 +34,15 @@
         details,
         main,
         summary {
-          display: block; }
+            display: block;
+        }
 
         /**
          * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
          */
         template {
-          display: none; }
+            display: none;
+        }
 
         /* Links
            ========================================================================== */
@@ -48,7 +51,8 @@
          */
         a:active,
         a:hover {
-          outline: 0; }
+            outline: 0;
+        }
 
         /* Text-level semantics
            ========================================================================== */
@@ -56,50 +60,58 @@
          * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
          */
         abbr[title] {
-          border-bottom: 1px dotted; }
+            border-bottom: 1px dotted;
+        }
 
         /**
          * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
          */
         b,
         strong {
-          font-weight: bold; }
+            font-weight: bold;
+        }
 
         /**
          * Address styling not present in Safari and Chrome.
          */
         dfn {
-          font-style: italic; }
+            font-style: italic;
+        }
 
         /**
          * Address variable `h1` font-size and margin within `section` and `article`
          * contexts in Firefox 4+, Safari, and Chrome.
          */
         h1 {
-          font-size: 2em;
-          margin: 0.67em 0; }
+            font-size: 2em;
+            margin: 0.67em 0;
+        }
 
         /**
          * Address inconsistent and variable font size in all browsers.
          */
         small {
-          font-size: 80%; }
+            font-size: 80%;
+        }
 
         /**
          * Prevent `sub` and `sup` affecting `line-height` in all browsers.
          */
         sub,
         sup {
-          font-size: 75%;
-          line-height: 0;
-          position: relative;
-          vertical-align: baseline; }
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
 
         sup {
-          top: -0.5em; }
+            top: -0.5em;
+        }
 
         sub {
-          bottom: -0.25em; }
+            bottom: -0.25em;
+        }
 
         /* Embedded content
            ========================================================================== */
@@ -107,7 +119,8 @@
          * Correct overflow not hidden in IE 9/10/11.
          */
         svg:not(:root) {
-          overflow: hidden; }
+            overflow: hidden;
+        }
 
         /* Grouping content
            ========================================================================== */
@@ -115,14 +128,16 @@
          * Address margin not present in IE 8/9 and Safari.
          */
         figure {
-          margin: 1em 40px; }
+            margin: 1em 40px;
+        }
 
         /**
          * Address differences between Firefox and other browsers.
          */
         hr {
-          box-sizing: content-box;
-          height: 0; }
+            box-sizing: content-box;
+            height: 0;
+        }
 
 
         /* Forms
@@ -142,18 +157,20 @@
         optgroup,
         select,
         textarea {
-          color: inherit;
-          /* 1 */
-          font: inherit;
-          /* 2 */
-          margin: 0;
-          /* 3 */ }
+            color: inherit;
+            /* 1 */
+            font: inherit;
+            /* 2 */
+            margin: 0;
+            /* 3 */
+        }
 
         /**
          * Address `overflow` set to `hidden` in IE 8/9/10/11.
          */
         button {
-          overflow: visible; }
+            overflow: visible;
+        }
 
         /**
          * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -163,7 +180,8 @@
          */
         button,
         select {
-          text-transform: none; }
+            text-transform: none;
+        }
 
         /**
          * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -176,56 +194,63 @@
         html input[type="button"],
         input[type="reset"],
         input[type="submit"] {
-          -webkit-appearance: button;
-          /* 2 */
-          cursor: pointer;
-          /* 3 */ }
+            -webkit-appearance: button;
+            /* 2 */
+            cursor: pointer;
+            /* 3 */
+        }
 
-        /**
+            /**
          * Re-set default cursor for disabled elements.
          */
-        button[disabled],
-        html input[disabled] {
-          cursor: default; }
+            button[disabled],
+            html input[disabled] {
+                cursor: default;
+            }
 
-        /**
+            /**
          * Remove inner padding and border in Firefox 4+.
          */
-        button::-moz-focus-inner,
-        input::-moz-focus-inner {
-          border: 0;
-          padding: 0; }
+            button::-moz-focus-inner,
+            input::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
 
         /**
          * Address Firefox 4+ setting `line-height` on `input` using `!important` in
          * the UA stylesheet.
          */
         input {
-          line-height: normal; }
+            line-height: normal;
+        }
 
-        /**
+            /**
          * Fix the cursor style for Chrome's increment/decrement buttons. For certain
          * `font-size` values of the `input`, it causes the cursor style of the
          * decrement button to change from `default` to `text`.
          */
-        input[type="number"]::-webkit-inner-spin-button,
-        input[type="number"]::-webkit-outer-spin-button {
-          height: auto; }
-                
-        
-                
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+                height: auto;
+            }
+
+
+
         /**
          * Remove default vertical scrollbar in IE 8/9/10/11.
          */
         textarea {
-          overflow: auto; }
+            overflow: auto;
+        }
 
         /**
          * Don't inherit the `font-weight` (applied by a rule above).
          * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
          */
         optgroup {
-          font-weight: bold; }
+            font-weight: bold;
+        }
 
         /* Tables
            ========================================================================== */
@@ -233,105 +258,137 @@
          * Remove most spacing between table cells.
          */
         table {
-          border-collapse: collapse;
-          border-spacing: 0; }
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
 
         td,
         th {
-          padding: 0; }
+            padding: 0;
+        }
 
         *, *::after, *::before {
-          box-sizing: border-box; }
+            box-sizing: border-box;
+        }
 
         .measure {
-          max-width: 48rem;
-          margin: 0 auto; }
+            max-width: 48rem;
+            margin: 0 auto;
+        }
 
         a {
-          color: #3498db; }
-          a:hover, a:focus, a:active {
-            color: #217dbb; }
-          
+            color: #3498db;
+        }
+
+            a:hover, a:focus, a:active {
+                color: #217dbb;
+            }
+
         @media screen and (min-width: 32rem) and (max-width: 48rem) {
-          html {
-            font-size: 15px; } }
+            html {
+                font-size: 15px;
+            }
+        }
 
         @media screen and (min-width: 48rem) {
-          html {
-            font-size: 16px; } }
+            html {
+                font-size: 16px;
+            }
+        }
 
         body {
-          font-family: 'Raleway', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-          font-weight: 400;
-          line-height: 1.6;
-          color: #333; }
+            font-family: 'Raleway', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #333;
+        }
 
         p,
         .p {
-          font-size: 1rem;
-          margin-bottom: 1.3rem; }
+            font-size: 1rem;
+            margin-bottom: 1.3rem;
+        }
 
         .italic {
-          font-style: italic; }
+            font-style: italic;
+        }
 
         .thin {
-          font-weight: 100; }
+            font-weight: 100;
+        }
 
         .bold {
-          font-weight: bold; }
+            font-weight: bold;
+        }
 
         .caps, table th {
-          font-variant: small-caps; }
+            font-variant: small-caps;
+        }
 
         .justify {
-          text-align: justify; }
+            text-align: justify;
+        }
 
         .ellipsis {
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          overflow: hidden; }
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
 
         .muted {
-          opacity: .7; }
+            opacity: .7;
+        }
 
         .clearfix:after {
-          content: "";
-          display: table;
-          clear: both; }
+            content: "";
+            display: table;
+            clear: both;
+        }
 
         .flt--left {
-          float: left; }
+            float: left;
+        }
 
         .flt--right {
-          float: right; }
+            float: right;
+        }
 
         .flt--none {
-          float: none; }
+            float: none;
+        }
 
         .center {
-          margin: auto auto; }
+            margin: auto auto;
+        }
 
         .txt--center {
-          text-align: center; }
+            text-align: center;
+        }
 
         .txt--right {
-          text-align: right; }
+            text-align: right;
+        }
 
         .txt--left, table th {
-          text-align: left; }
+            text-align: left;
+        }
 
         .oflow-y--scroll {
-          overflow-y: scroll; }
+            overflow-y: scroll;
+        }
 
         .w100,
         .w100--s {
-          width: 100%;
-          display: block; }
+            width: 100%;
+            display: block;
+        }
 
         @media screen and (min-width: 32rem) {
-          .w100--s {
-            width: auto;
-            display: inline-block; } }
+            .w100--s {
+                width: auto;
+                display: inline-block;
+            }
+        }
 
         img,
         canvas,
@@ -340,163 +397,198 @@
         svg,
         select,
         textarea {
-          max-width: 100%; }
+            max-width: 100%;
+        }
 
         .brdr--rounded, .btn, .btn--link, .btn--blue, .btn--green, .btn--gray, .btn--red {
-          border-radius: 3px; }
+            border-radius: 3px;
+        }
 
         .brdr--light-gray {
-          border: thin solid rgba(216, 216, 216, 0.99); }
+            border: thin solid rgba(216, 216, 216, 0.99);
+        }
 
         .brdr--mid-gray {
-          border: thin solid rgba(144, 144, 144, 0.99); }
+            border: thin solid rgba(144, 144, 144, 0.99);
+        }
 
         .brdr--dark-gray {
-          border: thin solid rgba(72, 72, 72, 0.99); }
+            border: thin solid rgba(72, 72, 72, 0.99);
+        }
 
         .brdr--off-white {
-          border: thin solid rgba(250, 250, 250, 0.99); }
+            border: thin solid rgba(250, 250, 250, 0.99);
+        }
 
         .btn, .btn--link, .btn--blue, .btn--green, .btn--gray, .btn--red {
-          padding: 0.5rem 1rem;
-          border: 2px solid #ccc;
-          color: #333;
-          text-decoration: none;
-          text-align: center;
-          background: transparent; }
+            padding: 0.5rem 1rem;
+            border: 2px solid #ccc;
+            color: #333;
+            text-decoration: none;
+            text-align: center;
+            background: transparent;
+        }
 
-        .btn:hover, .btn:focus, .btn:active {
-          background-color: rgba(0, 0, 0, 0.05);
-          color: black; }
+            .btn:hover, .btn:focus, .btn:active {
+                background-color: rgba(0, 0, 0, 0.05);
+                color: black;
+            }
 
         .btn--link {
-          border-color: transparent;
-          color: #3498db; }
-          .btn--link:hover {
-            background-color: transparent;
-            color: #1d6fa5; }
+            border-color: transparent;
+            color: #3498db;
+        }
+
+            .btn--link:hover {
+                background-color: transparent;
+                color: #1d6fa5;
+            }
 
         .btn--blue {
-          border-color: #2791d9;
-          background-color: #3498db;
-          color: #fff; }
-          .btn--blue:hover, .btn--blue:focus, .btn--blue:active {
+            border-color: #2791d9;
+            background-color: #3498db;
             color: #fff;
-            background-color: #217dbb; }
+        }
+
+            .btn--blue:hover, .btn--blue:focus, .btn--blue:active {
+                color: #fff;
+                background-color: #217dbb;
+            }
 
         .btn--green {
-          border-color: #22a978;
-          background-color: #25ba84;
-          color: #fff; }
-          .btn--green:hover, .btn--green:focus, .btn--green:active {
+            border-color: #22a978;
+            background-color: #25ba84;
             color: #fff;
-            background-color: #1d8f66; }
+        }
+
+            .btn--green:hover, .btn--green:focus, .btn--green:active {
+                color: #fff;
+                background-color: #1d8f66;
+            }
 
         .btn--gray {
-          border-color: rgba(59, 59, 59, 0.99);
-          background-color: rgba(72, 72, 72, 0.99);
-          color: #fff; }
-          .btn--gray:hover, .btn--gray:focus, .btn--gray:active {
+            border-color: rgba(59, 59, 59, 0.99);
+            background-color: rgba(72, 72, 72, 0.99);
             color: #fff;
-            background-color: rgba(47, 47, 47, 0.99); }
+        }
+
+            .btn--gray:hover, .btn--gray:focus, .btn--gray:active {
+                color: #fff;
+                background-color: rgba(47, 47, 47, 0.99);
+            }
 
         .btn--red {
-          border-color: #e43725;
-          background-color: #e74c3c;
-          color: #fff; }
-          .btn--red:hover, .btn--red:focus, .btn--red:active {
+            border-color: #e43725;
+            background-color: #e74c3c;
             color: #fff;
-            background-color: #d62c1a; }
+        }
+
+            .btn--red:hover, .btn--red:focus, .btn--red:active {
+                color: #fff;
+                background-color: #d62c1a;
+            }
 
         .btn--s {
-          padding: 0.5rem; }
+            padding: 0.5rem;
+        }
 
         .list--unstyled {
-          list-style-type: none; }
+            list-style-type: none;
+        }
 
         input,
         select,
         textarea {
-          padding: .5rem;
-          margin-bottom: .5rem;
-          display: block;
-          width: 100%;
-          box-shadow: none;
-          border: thin solid rgba(216, 216, 216, 0.99); }
+            padding: .5rem;
+            margin-bottom: .5rem;
+            display: block;
+            width: 100%;
+            box-shadow: none;
+            border: thin solid rgba(216, 216, 216, 0.99);
+        }
 
-        input[type="submit"] {
-          margin-top: .85rem; }
+            input[type="submit"] {
+                margin-top: .85rem;
+            }
 
-        input[type="checkbox"] {
-          display: inline-block;
-          vertical-align: bottom;
-          width: auto; }
-        
+            input[type="checkbox"] {
+                display: inline-block;
+                vertical-align: bottom;
+                width: auto;
+            }
+
         table > thead {
-          border-bottom: thin solid rgba(250, 250, 250, 0.99); }
+            border-bottom: thin solid rgba(250, 250, 250, 0.99);
+        }
 
         table th,
         table td {
-          padding: .25rem;
-          word-wrap: normal;
-          line-height: 1; }
+            padding: .25rem;
+            word-wrap: normal;
+            line-height: 1;
+        }
 
         .sans-serif {
-          font-family: -apple-system, BlinkMacSystemFont,
-                       'avenir next', avenir,
-                       helvetica, 'helvetica neue',
-                       ubuntu,
-                       roboto, noto,
-                       'segoe ui', arial,
-                       sans-serif;
-        }
-        .serif { font-family: georgia, times, serif; }
-        .baskerville { font-family: baskerville, serif; }
-
-
-        #books {
-            float: left;
-        }
-        #numVerses {
-            float: left;
+            font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
         }
 
-        .btn-primary-bl{
-          background-color: #357edd;
-          border-radius: .5rem;
-          border-color: #357edd;          
-          color: #fff;
+        .serif {
+            font-family: georgia, times, serif;
         }
-        
+
+        .baskerville {
+            font-family: baskerville, serif;
+        }
+
+        .btn-primary-bl {
+            background-color: #357edd;
+            border-radius: .5rem;
+            border-color: #357edd;
+            color: #fff;
+        }
+
         .btn-primary-bl:hover, .btn-primary-bl:focus, .btn-primary-bl:active {
-              color: #fff;
-              background-color: #357edd;
+            color: #fff;
+            background-color: #357edd;
         }
 
-        .btn-success-gn{
-          background-color:  #19a974;
-          border-radius: .5rem;
+        .btn-success-gn {
+            background-color: #19a974;
+            border-radius: .5rem;
+            border-color: #19a974;
+            color: #fff;
         }
-        
-        #savedDataMessage{
+
+        .btn-success-gn:hover, .btn-success-gn:focus, .btn-success-gn:active {
+            color: #fff;
+            background-color: #19a974;
+        }
+
+        .msg {
             background-color: #ffde37;
             border-radius: .5rem;
             font-size: 12px;
             font-weight: bold;
         }
-        .hidden{
+
+        .hidden {
             display: none;
         }
-                
-        .field{          
-          padding: 0 0.35em 0 0; }
 
-        .tooltip{
-            display: inline;
-            position: relative;            
+        .field {
+            padding: 0 0.35em 0 0.35em;            
         }
 
-        .tooltip:hover:after{
+        .clear{
+            clear:left;
+        }
+
+        .tooltip {
+            display: inline;
+            position: relative;
+        }
+
+        .tooltip:hover:after {
             background: #333;
             background: rgba(0,0,0,.8);
             border-radius: 5px;
@@ -512,7 +604,7 @@
             font-weight: bold;
         }
 
-        .tooltip:hover:before{
+        .tooltip:hover:before {
             border: solid;
             border-color: #333 transparent;
             border-width: 0px 6px 6px 6px;
@@ -522,14 +614,14 @@
             position: absolute;
             z-index: 99;
         }
-    </style> 
+    </style>
     <!-- Google Fonts -->
- <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,700' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,700' rel='stylesheet' type='text/css'>
 </head>
 <body onload="Initializer();">
-    <form>
-        <fieldset>
-            <div id="books" class="field">
+    <form>        
+        <div class="flt--left">
+            <div class="field flt--left">
                 <label for="selBooks">Books</label>
                 <select id="selBooks">
                     <option>Gen</option>
@@ -600,174 +692,239 @@
                     <option>Rev</option>
                 </select>
             </div>
-            <div id="numVerses" class="field">
+            <div class="field flt--left">                    
                 <label for="txtNumVerses">
-                    Verses per passage <a class="tooltip" data-tip="85 is default Bible-in-a-year">*</a>
+                    Verses per passage <a class="tooltip" data-tip="An average; 85 gives Bible-in-a-year">*</a>
                 </label>
-                <input type="number" id="txtNumVerses" value="85" min="1" max="9999" maxlength="4" onkeypress="javascript: if (this.value.length >= this.maxLength) { event.preventDefault(); return false; } if (event.keyCode == 13 || event.keyCode == 45 || event.keyCode == 46 || event.keyCode == 69 || event.keyCode == 101 || event.keyCode == 32) { event.preventDefault(); return false; }" />
+                <input type="number" id="txtNumVerses" value="85" min="1" max="9999" maxlength="4" onkeypress="javascript: if (this.value.length >= this.maxLength) { event.preventDefault(); return false; } if (event.keyCode == 13 || event.keyCode == 45 || event.keyCode == 46 || event.keyCode == 69 || event.keyCode == 101 || event.keyCode == 32) { event.preventDefault(); return false; }" />                    
             </div>
             <div>
-                <input type="button" value="Add" class="btn-primary-bl" onclick="AddPlan();" />
+                <input type="button" value="Add to Reading List" class="btn-primary-bl" onclick="AddToReadingList();" />
             </div>
-        </fieldset>        
+
+            <div id="savedReading">                
+                <div class="field">
+                    <label for="output">
+                        Reading List
+                    </label>
+                    <select id="output" onchange="setOpenPassage();"></select>
+                </div>
+                <div id="openPassage">
+                </div>
+                <div>
+                    <input type="button" value="Done With Passage" class="btn-success-gn" onclick="RemovePassage();"/>
+                </div>
+            </div>
+        </div>                
     </form>
-    <div id="dvSavedReading" class="hidden">
-        <div style="font-size:36px;">
-            Saved Reading
-        </div>
-        <div id="savedDataMessage">
-            *Note: This page relies on browser storage to save reading selections. Your browser currently does not provide any promise for your saved information when available space is low and it may clear storage without warning. Your browser might provide the ability to affect this simply by adding this page to your bookmarks or favorites list. <a href="">See post for details</a>
-        </div>
-        <div id="output">
-        </div>
+    <div class="msg flt--left" id="savedDataMessage">
+        *Note: This page relies on browser storage to save the reading list. Your browser currently does not provide the promise to protect your saved list when available space is low and it may clear storage without warning. Your browser might provide the ability to prevent this simply by making this page a bookmark/favorite. <a href="">See post for details</a>
     </div>
-    
-    <script>
-    //https://bootbites.com/articles/adding-google-fonts-your-bootstrap-theme/
-    var BibleTable = [{"abbr":"Gen","book":"Genesis","chapters":["31","25","24","26","32","22","24","22","29","32","32","20","18","24","21","16","27","33","38","18","34","24","20","67","34","35","46","22","35","43","55","32","20","31","29","43","36","30","23","23","57","38","34","34","28","34","31","22","33","26"]},{"abbr":"Exod","book":"Exodus","chapters":["22","25","22","31","23","30","25","32","35","29","10","51","22","31","27","36","16","27","25","26","36","31","33","18","40","37","21","43","46","38","18","35","23","35","35","38","29","31","43","38"]},{"abbr":"Lev","book":"Leviticus","chapters":["17","16","17","35","19","30","38","36","24","20","47","8","59","57","33","34","16","30","37","27","24","33","44","23","55","46","34"]},{"abbr":"Num","book":"Numbers","chapters":["54","34","51","49","31","27","89","26","23","36","35","16","33","45","41","50","13","32","22","29","35","41","30","25","18","65","23","31","40","16","54","42","56","29","34","13"]},{"abbr":"Deut","book":"Deuteronomy","chapters":["46","37","29","49","33","25","26","20","29","22","32","32","18","29","23","22","20","22","21","20","23","30","25","22","19","19","26","68","29","20","30","52","29","12"]},{"abbr":"Josh","book":"Joshua","chapters":["18","24","17","24","15","27","26","35","27","43","23","24","33","15","63","10","18","28","51","9","45","34","16","33"]},{"abbr":"Judg","book":"Judges","chapters":["36","23","31","24","31","40","25","35","57","18","40","15","25","20","20","31","13","31","30","48","25"]},{"abbr":"Ruth","book":"Ruth","chapters":["22","23","18","22"]},{"abbr":"1Sam","book":"1 Samuel","chapters":["28","36","21","22","12","21","17","22","27","27","15","25","23","52","35","23","58","30","24","42","15","23","29","22","44","25","12","25","11","31","13"]},{"abbr":"2Sam","book":"2 Samuel","chapters":["27","32","39","12","25","23","29","18","13","19","27","31","39","33","37","23","29","33","43","26","22","51","39","25"]},{"abbr":"1Kgs","book":"1 Kings","chapters":["53","46","28","34","18","38","51","66","28","29","43","33","34","31","34","34","24","46","21","43","29","53"]},{"abbr":"2Kgs","book":"2 Kings","chapters":["18","25","27","44","27","33","20","29","37","36","21","21","25","29","38","20","41","37","37","21","26","20","37","20","30"]},{"abbr":"1Chr","book":"1 Chronicles","chapters":["54","55","24","43","26","81","40","40","44","14","47","40","14","17","29","43","27","17","19","8","30","19","32","31","31","32","34","21","30"]},{"abbr":"2Chr","book":"2 Chronicles","chapters":["17","18","17","22","14","42","22","18","31","19","23","16","22","15","19","14","19","34","11","37","20","12","21","27","28","23","9","27","36","27","21","33","25","33","27","23"]},{"abbr":"Ezra","book":"Ezra","chapters":["11","70","13","24","17","22","28","36","15","44"]},{"abbr":"Neh","book":"Nehemiah","chapters":["11","20","32","23","19","19","73","18","38","39","36","47","31"]},{"abbr":"Esth","book":"Esther","chapters":["22","23","15","17","14","14","10","17","32","3"]},{"abbr":"Job","book":"Job","chapters":["22","13","26","21","27","30","21","22","35","22","20","25","28","22","35","22","16","21","29","29","34","30","17","25","6","14","23","28","25","31","40","22","33","37","16","33","24","41","30","24","34","17"]},{"abbr":"Ps","book":"Psalm","chapters":["6","12","8","8","12","10","17","9","20","18","7","8","6","7","5","11","15","50","14","9","13","31","6","10","22","12","14","9","11","12","24","11","22","22","28","12","40","22","13","17","13","11","5","26","17","11","9","14","20","23","19","9","6","7","23","13","11","11","17","12","8","12","11","10","13","20","7","35","36","5","24","20","28","23","10","12","20","72","13","19","16","8","18","12","13","17","7","18","52","17","16","15","5","23","11","13","12","9","9","5","8","28","22","35","45","48","43","13","31","7","10","10","9","8","18","19","2","29","176","7","8","9","4","8","5","6","5","6","8","8","3","18","3","3","21","26","9","8","24","13","10","7","12","15","21","10","20","14","9","6"]},{"abbr":"Prov","book":"Proverbs","chapters":["33","22","35","27","23","35","27","36","18","32","31","28","25","35","33","33","28","24","29","30","31","29","35","34","28","28","27","28","27","33","31"]},{"abbr":"Eccl","book":"Ecclesiastes","chapters":["18","26","22","16","20","12","29","17","18","20","10","14"]},{"abbr":"Song","book":"Song of Solomon","chapters":["17","17","11","16","16","13","13","14"]},{"abbr":"Isa","book":"Isaiah","chapters":["31","22","26","6","30","13","25","22","21","34","16","6","22","32","9","14","14","7","25","6","17","25","18","23","12","21","13","29","24","33","9","20","24","17","10","22","38","22","8","31","29","25","28","28","25","13","15","22","26","11","23","15","12","17","13","12","21","14","21","22","11","12","19","12","25","24"]},{"abbr":"Jer","book":"Jeremiah","chapters":["19","37","25","31","31","30","34","22","26","25","23","17","27","22","21","21","27","23","15","18","14","30","40","10","38","24","22","17","32","24","40","44","26","22","19","32","21","28","18","16","18","22","13","30","5","28","7","47","39","46","64","34"]},{"abbr":"Lam","book":"Lamentations","chapters":["22","22","66","22","22"]},{"abbr":"Ezek","book":"Ezekiel","chapters":["28","10","27","17","17","14","27","18","11","22","25","28","23","23","8","63","24","32","14","49","32","31","49","27","17","21","36","26","21","26","18","32","33","31","15","38","28","23","29","49","26","20","27","31","25","24","23","35"]},{"abbr":"Dan","book":"Daniel","chapters":["21","49","30","37","31","28","28","27","27","21","45","13"]},{"abbr":"Hos","book":"Hosea","chapters":["11","23","5","19","15","11","16","14","17","15","12","14","16","9"]},{"abbr":"Joel","book":"Joel","chapters":["20","32","21"]},{"abbr":"Amos","book":"Amos","chapters":["15","16","15","13","27","14","17","14","15"]},{"abbr":"Obad","book":"Obadiah","chapters":["21"]},{"abbr":"Jonah","book":"Jonah","chapters":["17","10","10","11"]},{"abbr":"Mic","book":"Micah","chapters":["16","13","12","13","15","16","20"]},{"abbr":"Nah","book":"Nahum","chapters":["15","13","19"]},{"abbr":"Hab","book":"Habakkuk","chapters":["17","20","19"]},{"abbr":"Zeph","book":"Zephaniah","chapters":["18","15","20"]},{"abbr":"Hag","book":"Haggai","chapters":["15","23"]},{"abbr":"Zech","book":"Zechariah","chapters":["21","13","10","14","11","15","14","23","17","12","17","14","9","21"]},{"abbr":"Mal","book":"Malachi","chapters":["14","17","18","6"]},{"abbr":"Matt","book":"Matthew","chapters":["25","23","17","25","48","34","29","34","38","42","30","50","58","36","39","28","27","35","30","34","46","46","39","51","46","75","66","20"]},{"abbr":"Mark","book":"Mark","chapters":["45","28","35","41","43","56","37","38","50","52","33","44","37","72","47","20"]},{"abbr":"Luke","book":"Luke","chapters":["80","52","38","44","39","49","50","56","62","42","54","59","35","35","32","31","37","43","48","47","38","71","56","53"]},{"abbr":"John","book":"John","chapters":["51","25","36","54","47","71","53","59","41","42","57","50","38","31","27","33","26","40","42","31","25"]},{"abbr":"Acts","book":"Acts","chapters":["26","47","26","37","42","15","60","40","43","48","30","25","52","28","41","40","34","28","41","38","40","30","35","27","27","32","44","31"]},{"abbr":"Rom","book":"Romans","chapters":["32","29","31","25","21","23","25","39","33","21","36","21","14","23","33","27"]},{"abbr":"1Cor","book":"1 Corinthians","chapters":["31","16","23","21","13","20","40","13","27","33","34","31","13","40","58","24"]},{"abbr":"2Cor","book":"2 Corinthians","chapters":["24","17","18","18","21","18","16","24","15","18","33","21","14"]},{"abbr":"Gal","book":"Galatians","chapters":["24","21","29","31","26","18"]},{"abbr":"Eph","book":"Ephesians","chapters":["23","22","21","32","33","24"]},{"abbr":"Phil","book":"Philippians","chapters":["30","30","21","23"]},{"abbr":"Col","book":"Colossians","chapters":["29","23","25","18"]},{"abbr":"1Thess","book":"1 Thessalonians","chapters":["10","20","13","18","28"]},{"abbr":"2Thess","book":"2 Thessalonians","chapters":["12","17","18"]},{"abbr":"1Tim","book":"1 Timothy","chapters":["20","15","16","16","25","21"]},{"abbr":"2Tim","book":"2 Timothy","chapters":["18","26","17","22"]},{"abbr":"Titus","book":"Titus","chapters":["16","15","15"]},{"abbr":"Phlm","book":"Philemon","chapters":["25"]},{"abbr":"Heb","book":"Hebrews","chapters":["14","18","19","16","14","20","28","13","28","39","40","29","25"]},{"abbr":"Jas","book":"James","chapters":["27","26","18","17","20"]},{"abbr":"1Pet","book":"1 Peter","chapters":["25","25","22","19","14"]},{"abbr":"2Pet","book":"2 Peter","chapters":["21","22","18"]},{"abbr":"1John","book":"1 John","chapters":["10","29","24","21","21"]},{"abbr":"2John","book":"2 John","chapters":["13"]},{"abbr":"3John","book":"3 John","chapters":["15"]},{"abbr":"Jude","book":"Jude","chapters":["25"]},{"abbr":"Rev","book":"Revelation","chapters":["20","29","22","11","14","17","17","13","21","11","19","17","18","20","8","21","18","24","21","15","27","21"]}];
-    var breaddb;
+    <script type="text/javascript">
+        //https://bootbites.com/articles/adding-google-fonts-your-bootstrap-theme/
+        //http://caramel.kurisubrooks.com
+        var BibleTable = [{"abbr":"Gen","book":"Genesis","chapters":["31","25","24","26","32","22","24","22","29","32","32","20","18","24","21","16","27","33","38","18","34","24","20","67","34","35","46","22","35","43","55","32","20","31","29","43","36","30","23","23","57","38","34","34","28","34","31","22","33","26"]},{"abbr":"Exod","book":"Exodus","chapters":["22","25","22","31","23","30","25","32","35","29","10","51","22","31","27","36","16","27","25","26","36","31","33","18","40","37","21","43","46","38","18","35","23","35","35","38","29","31","43","38"]},{"abbr":"Lev","book":"Leviticus","chapters":["17","16","17","35","19","30","38","36","24","20","47","8","59","57","33","34","16","30","37","27","24","33","44","23","55","46","34"]},{"abbr":"Num","book":"Numbers","chapters":["54","34","51","49","31","27","89","26","23","36","35","16","33","45","41","50","13","32","22","29","35","41","30","25","18","65","23","31","40","16","54","42","56","29","34","13"]},{"abbr":"Deut","book":"Deuteronomy","chapters":["46","37","29","49","33","25","26","20","29","22","32","32","18","29","23","22","20","22","21","20","23","30","25","22","19","19","26","68","29","20","30","52","29","12"]},{"abbr":"Josh","book":"Joshua","chapters":["18","24","17","24","15","27","26","35","27","43","23","24","33","15","63","10","18","28","51","9","45","34","16","33"]},{"abbr":"Judg","book":"Judges","chapters":["36","23","31","24","31","40","25","35","57","18","40","15","25","20","20","31","13","31","30","48","25"]},{"abbr":"Ruth","book":"Ruth","chapters":["22","23","18","22"]},{"abbr":"1Sam","book":"1 Samuel","chapters":["28","36","21","22","12","21","17","22","27","27","15","25","23","52","35","23","58","30","24","42","15","23","29","22","44","25","12","25","11","31","13"]},{"abbr":"2Sam","book":"2 Samuel","chapters":["27","32","39","12","25","23","29","18","13","19","27","31","39","33","37","23","29","33","43","26","22","51","39","25"]},{"abbr":"1Kgs","book":"1 Kings","chapters":["53","46","28","34","18","38","51","66","28","29","43","33","34","31","34","34","24","46","21","43","29","53"]},{"abbr":"2Kgs","book":"2 Kings","chapters":["18","25","27","44","27","33","20","29","37","36","21","21","25","29","38","20","41","37","37","21","26","20","37","20","30"]},{"abbr":"1Chr","book":"1 Chronicles","chapters":["54","55","24","43","26","81","40","40","44","14","47","40","14","17","29","43","27","17","19","8","30","19","32","31","31","32","34","21","30"]},{"abbr":"2Chr","book":"2 Chronicles","chapters":["17","18","17","22","14","42","22","18","31","19","23","16","22","15","19","14","19","34","11","37","20","12","21","27","28","23","9","27","36","27","21","33","25","33","27","23"]},{"abbr":"Ezra","book":"Ezra","chapters":["11","70","13","24","17","22","28","36","15","44"]},{"abbr":"Neh","book":"Nehemiah","chapters":["11","20","32","23","19","19","73","18","38","39","36","47","31"]},{"abbr":"Esth","book":"Esther","chapters":["22","23","15","17","14","14","10","17","32","3"]},{"abbr":"Job","book":"Job","chapters":["22","13","26","21","27","30","21","22","35","22","20","25","28","22","35","22","16","21","29","29","34","30","17","25","6","14","23","28","25","31","40","22","33","37","16","33","24","41","30","24","34","17"]},{"abbr":"Ps","book":"Psalm","chapters":["6","12","8","8","12","10","17","9","20","18","7","8","6","7","5","11","15","50","14","9","13","31","6","10","22","12","14","9","11","12","24","11","22","22","28","12","40","22","13","17","13","11","5","26","17","11","9","14","20","23","19","9","6","7","23","13","11","11","17","12","8","12","11","10","13","20","7","35","36","5","24","20","28","23","10","12","20","72","13","19","16","8","18","12","13","17","7","18","52","17","16","15","5","23","11","13","12","9","9","5","8","28","22","35","45","48","43","13","31","7","10","10","9","8","18","19","2","29","176","7","8","9","4","8","5","6","5","6","8","8","3","18","3","3","21","26","9","8","24","13","10","7","12","15","21","10","20","14","9","6"]},{"abbr":"Prov","book":"Proverbs","chapters":["33","22","35","27","23","35","27","36","18","32","31","28","25","35","33","33","28","24","29","30","31","29","35","34","28","28","27","28","27","33","31"]},{"abbr":"Eccl","book":"Ecclesiastes","chapters":["18","26","22","16","20","12","29","17","18","20","10","14"]},{"abbr":"Song","book":"Song of Solomon","chapters":["17","17","11","16","16","13","13","14"]},{"abbr":"Isa","book":"Isaiah","chapters":["31","22","26","6","30","13","25","22","21","34","16","6","22","32","9","14","14","7","25","6","17","25","18","23","12","21","13","29","24","33","9","20","24","17","10","22","38","22","8","31","29","25","28","28","25","13","15","22","26","11","23","15","12","17","13","12","21","14","21","22","11","12","19","12","25","24"]},{"abbr":"Jer","book":"Jeremiah","chapters":["19","37","25","31","31","30","34","22","26","25","23","17","27","22","21","21","27","23","15","18","14","30","40","10","38","24","22","17","32","24","40","44","26","22","19","32","21","28","18","16","18","22","13","30","5","28","7","47","39","46","64","34"]},{"abbr":"Lam","book":"Lamentations","chapters":["22","22","66","22","22"]},{"abbr":"Ezek","book":"Ezekiel","chapters":["28","10","27","17","17","14","27","18","11","22","25","28","23","23","8","63","24","32","14","49","32","31","49","27","17","21","36","26","21","26","18","32","33","31","15","38","28","23","29","49","26","20","27","31","25","24","23","35"]},{"abbr":"Dan","book":"Daniel","chapters":["21","49","30","37","31","28","28","27","27","21","45","13"]},{"abbr":"Hos","book":"Hosea","chapters":["11","23","5","19","15","11","16","14","17","15","12","14","16","9"]},{"abbr":"Joel","book":"Joel","chapters":["20","32","21"]},{"abbr":"Amos","book":"Amos","chapters":["15","16","15","13","27","14","17","14","15"]},{"abbr":"Obad","book":"Obadiah","chapters":["21"]},{"abbr":"Jonah","book":"Jonah","chapters":["17","10","10","11"]},{"abbr":"Mic","book":"Micah","chapters":["16","13","12","13","15","16","20"]},{"abbr":"Nah","book":"Nahum","chapters":["15","13","19"]},{"abbr":"Hab","book":"Habakkuk","chapters":["17","20","19"]},{"abbr":"Zeph","book":"Zephaniah","chapters":["18","15","20"]},{"abbr":"Hag","book":"Haggai","chapters":["15","23"]},{"abbr":"Zech","book":"Zechariah","chapters":["21","13","10","14","11","15","14","23","17","12","17","14","9","21"]},{"abbr":"Mal","book":"Malachi","chapters":["14","17","18","6"]},{"abbr":"Matt","book":"Matthew","chapters":["25","23","17","25","48","34","29","34","38","42","30","50","58","36","39","28","27","35","30","34","46","46","39","51","46","75","66","20"]},{"abbr":"Mark","book":"Mark","chapters":["45","28","35","41","43","56","37","38","50","52","33","44","37","72","47","20"]},{"abbr":"Luke","book":"Luke","chapters":["80","52","38","44","39","49","50","56","62","42","54","59","35","35","32","31","37","43","48","47","38","71","56","53"]},{"abbr":"John","book":"John","chapters":["51","25","36","54","47","71","53","59","41","42","57","50","38","31","27","33","26","40","42","31","25"]},{"abbr":"Acts","book":"Acts","chapters":["26","47","26","37","42","15","60","40","43","48","30","25","52","28","41","40","34","28","41","38","40","30","35","27","27","32","44","31"]},{"abbr":"Rom","book":"Romans","chapters":["32","29","31","25","21","23","25","39","33","21","36","21","14","23","33","27"]},{"abbr":"1Cor","book":"1 Corinthians","chapters":["31","16","23","21","13","20","40","13","27","33","34","31","13","40","58","24"]},{"abbr":"2Cor","book":"2 Corinthians","chapters":["24","17","18","18","21","18","16","24","15","18","33","21","14"]},{"abbr":"Gal","book":"Galatians","chapters":["24","21","29","31","26","18"]},{"abbr":"Eph","book":"Ephesians","chapters":["23","22","21","32","33","24"]},{"abbr":"Phil","book":"Philippians","chapters":["30","30","21","23"]},{"abbr":"Col","book":"Colossians","chapters":["29","23","25","18"]},{"abbr":"1Thess","book":"1 Thessalonians","chapters":["10","20","13","18","28"]},{"abbr":"2Thess","book":"2 Thessalonians","chapters":["12","17","18"]},{"abbr":"1Tim","book":"1 Timothy","chapters":["20","15","16","16","25","21"]},{"abbr":"2Tim","book":"2 Timothy","chapters":["18","26","17","22"]},{"abbr":"Titus","book":"Titus","chapters":["16","15","15"]},{"abbr":"Phlm","book":"Philemon","chapters":["25"]},{"abbr":"Heb","book":"Hebrews","chapters":["14","18","19","16","14","20","28","13","28","39","40","29","25"]},{"abbr":"Jas","book":"James","chapters":["27","26","18","17","20"]},{"abbr":"1Pet","book":"1 Peter","chapters":["25","25","22","19","14"]},{"abbr":"2Pet","book":"2 Peter","chapters":["21","22","18"]},{"abbr":"1John","book":"1 John","chapters":["10","29","24","21","21"]},{"abbr":"2John","book":"2 John","chapters":["13"]},{"abbr":"3John","book":"3 John","chapters":["15"]},{"abbr":"Jude","book":"Jude","chapters":["25"]},{"abbr":"Rev","book":"Revelation","chapters":["20","29","22","11","14","17","17","13","21","11","19","17","18","20","8","21","18","24","21","15","27","21"]}];
+        var breaddb;
 
-    function DBErrorHandler(ex) {
-        alert("DB Error: " + ex);
-    }
-    function Initializer(){
-
-        if (navigator.storage && navigator.storage.persist){
-            navigator.storage.persist().then(granted => {
-                if (granted)
-                    document.getElementById('savedDataMessage').classList.add('hidden'); //alert("Storage will not be cleared except by explicit user action");
-                /*
-                else
-                    alert("Storage may be cleared by the UA under storage pressure.");*/
-            });
+        function DBErrorHandler(ex) {
+            alert("DB Error: " + ex);
         }
+        function Initializer(){
 
-        var request = indexedDB.open("breaddb", 1);
-        request.onerror = function (event){
-            DBErrorHandler(event.target);
-        }
-        request.onupgradeneeded = function (event) {
-            alert('create start');
-            request.result.createObjectStore('prog', { autoIncrement: true });
-            alert('end create');
-        }
+            window.planLines = [];
+            window.planLinks = [];
+            window.planObjs = [];
 
-        request.onsuccess = function (event) {
-            breaddb = request.result;
-            alert('open success');
-            objs = breaddb.transaction('prog').objectStore('prog').getAll();
-            objs.onsuccess = function () {
-                if (objs.result && objs.result.length > 0) {
-                    document.getElementById('dvSavedReading').classList.remove('hidden');
-                    document.getElementById('output').innerHTML = objs.result[0].join('<br />');
+            if (navigator.storage && navigator.storage.persist){
+                navigator.storage.persist().then(granted => {
+                    if (granted)
+                        document.getElementById('savedDataMessage').classList.add('hidden'); //alert("Storage will not be cleared except by explicit user action");
+                    /*
+                    else
+                        alert("Storage may be cleared by the UA under storage pressure.");*/
+                });
+            }
+
+            var request = indexedDB.open("breaddb", 1);
+            request.onerror = function (event){
+                DBErrorHandler(event.target);
+            }
+            request.onupgradeneeded = function (event) {
+                //alert('create start');
+                request.result.createObjectStore('prog', { autoIncrement: true });
+                //alert('end create');
+            }
+
+            request.onsuccess = function (event) {
+                breaddb = request.result;
+                //alert('open success');
+                objs = breaddb.transaction('prog').objectStore('prog').getAll();
+                objs.onsuccess = function () {
+                    if (objs.result && objs.result.length > 0 && objs.result[0].length > 0) {
+                        window.planObjs = objs.result[0];
+                        UpdateDisplayedPassages();
+                        document.getElementById('output').innerHTML = planLines.join('</br>');
+                        document.getElementById('openPassage').innerHTML = planLinks[0];
+                    }
                 }
             }
         }
-    }
 
-    function clear() {
-        breaddb.transaction('prog', 'readwrite').objectStore('prog').clear();
-    }
-
-    function AddPlan() {
-        clear();
-        var yearPace = 85;
-        
-        var pace = parseInt(document.getElementById('txtNumVerses').value);
-        if (pace == 0 || isNaN(pace)) {
-            pace = yearPace;
-            document.getElementById('txtNumVerses').value = yearPace;
+        function setOpenPassage() {
+            document.getElementById('openPassage').innerHTML = window.planLinks[event.target.selectedIndex];
         }
-        var planLines = [];
-        var planLinks = [];
-        var planOutputsCount = 0;
-        var chap = 0;
-        var numberVerses = 0;
-        var leftoverNumber = 0;
-        var chapterDisplayStart, chapterDisplayEnd, verseDisplayStart, verseDisplayEnd;
 
-        var totalVersesNeeded = pace;
-        //for (var k = 0; k < 1; k++) {
-        var k = document.getElementById('selBooks').selectedIndex;
-        var keepStart = false;
-        //alert(k);
-        
-        for (var chapterCount = 0; chapterCount < BibleTable[k].chapters.length; chapterCount++) {
-            chap = 0;
-            numberVerses = parseInt(BibleTable[k].chapters[chapterCount]);
+        function UpdateDisplayedPassages() {
+            window.planLines = [];
+            window.planLinks = [];
 
-            if (totalVersesNeeded > numberVerses) {
-                totalVersesNeeded = totalVersesNeeded - numberVerses;
+            var x = 0;
+            while (x < window.planObjs.length) {
+                SetData(x);
+                x++;
+            }
+        }
 
-                if (!keepStart) {
-                    chapterDisplayStart = (chapterCount + 1);
-                    verseDisplayStart = 1;
-                    keepStart = true;
-                }
+        function clear() {
+            breaddb.transaction('prog', 'readwrite').objectStore('prog').clear();
+        }
+
+        function RemovePassage() {
+            var output = document.getElementById('output');
+            window.planObjs.splice(output.selectedIndex, 1);
+            window.planLinks.splice(output.selectedIndex, 1);
+            window.planLines.splice(output.selectedIndex, 1);
+            
+            if (window.planObjs.length > 0) {
+                document.getElementById('output').innerHTML = window.planLines.join('</br>');
+                document.getElementById('openPassage').innerHTML = window.planLinks[output.selectedIndex];
             }
             else {
+                document.getElementById('output').innerHTML = '';
+                document.getElementById('openPassage').innerHTML = '';
+            }
+            clear();
+            breaddb.transaction('prog', 'readwrite').objectStore('prog').add(window.planObjs);
+        }
 
-                //alert(numberVerses);
-                if (!keepStart) {
-                    chapterDisplayStart = (chapterCount + 1);
-                }
+        function AddToReadingList() {
+            clear();
+            var yearPace = 85;
 
-                chapterDisplayEnd = (chapterCount + 1);
+            var pace = parseInt(document.getElementById('txtNumVerses').value);
+            if (pace == 0 || isNaN(pace)) {
+                pace = yearPace;
+                document.getElementById('txtNumVerses').value = yearPace;
+            }
+            
+            var planOutputsCount = planObjs.length;
+            var chap = 0;
+            var numberVerses = 0;
+            var leftoverNumber = 0;
+            var chapterDisplayStart, chapterDisplayEnd, verseDisplayStart, verseDisplayEnd;
 
-                while (chap < numberVerses) {
+            var totalVersesNeeded = pace;
+            //for (var k = 0; k < 1; k++) {
+            var k = document.getElementById('selBooks').selectedIndex;
+            var keepStart = false;
+            //alert(k);
+
+            for (var chapterCount = 0; chapterCount < BibleTable[k].chapters.length; chapterCount++) {
+                chap = 0;
+                numberVerses = parseInt(BibleTable[k].chapters[chapterCount]);
+
+                if (totalVersesNeeded > numberVerses) {
+                    totalVersesNeeded = totalVersesNeeded - numberVerses;
 
                     if (!keepStart) {
-                        // Assign the start verse
-                        verseDisplayStart = chap + 1;
+                        chapterDisplayStart = (chapterCount + 1);
+                        verseDisplayStart = 1;
+                        keepStart = true;
                     }
-                    // Assign the end verse
-                    if ((chap + totalVersesNeeded) <= numberVerses) {
-                        verseDisplayEnd = (chap + totalVersesNeeded);
-                    }
-                    else {
-                        verseDisplayEnd = numberVerses;
+                }
+                else {
 
-                        if (chapterCount < (BibleTable[k].chapters.length - 1)) {
-                            // Are number of verses to be read 25% or less the pace
-                            if ((numberVerses - chap) <= Math.round(pace * .25)) {
-                                totalVersesNeeded = totalVersesNeeded - (numberVerses - chap);
-                                chap = numberVerses;
-                                keepStart = true;
-                                break;
+                    //alert(numberVerses);
+                    if (!keepStart) {
+                        chapterDisplayStart = (chapterCount + 1);
+                    }
+
+                    chapterDisplayEnd = (chapterCount + 1);
+
+                    while (chap < numberVerses) {
+
+                        if (!keepStart) {
+                            // Assign the start verse
+                            verseDisplayStart = chap + 1;
+                        }
+                        // Assign the end verse
+                        if ((chap + totalVersesNeeded) <= numberVerses) {
+                            verseDisplayEnd = (chap + totalVersesNeeded);
+                        }
+                        else {
+                            verseDisplayEnd = numberVerses;
+
+                            if (chapterCount < (BibleTable[k].chapters.length - 1)) {
+                                // Are number of verses to be read 25% or less the pace
+                                if ((numberVerses - chap) <= Math.round(pace * .25)) {
+                                    totalVersesNeeded = totalVersesNeeded - (numberVerses - chap);
+                                    chap = numberVerses;
+                                    keepStart = true;
+                                    break;
+                                }
                             }
+                        }
+
+                        planObjs[planOutputsCount] = {
+                            bookIndex: k,                        
+                            chapterStart: chapterDisplayStart,
+                            verseStart: verseDisplayStart,
+                            chapterEnd: chapterDisplayEnd,
+                            verseEnd: verseDisplayEnd
+                        };
+                        SetData(planOutputsCount);                    
+                        planOutputsCount++;
+
+                        chap = chap + totalVersesNeeded;
+
+                        if (keepStart) {
+                            keepStart = false;
+                            totalVersesNeeded = pace;
+                            chapterDisplayStart = (chapterCount + 1);
                         }
                     }
 
-                    planLines[planOutputsCount] = BibleTable[k].abbr + ' ' + chapterDisplayStart + ':' + verseDisplayStart + ' - ' + chapterDisplayEnd + ':' + verseDisplayEnd;
-                    planLinks[planOutputsCount] = '<a href=\"https://www.esv.org/' + BibleTable[k].book + '+' + chapterDisplayStart + ':' + verseDisplayStart + '\">' + planLines[planOutputsCount] + '</a>';
-                    planOutputsCount++;
-
-                    chap = chap + totalVersesNeeded;
-
-                    if (keepStart) {
-                        keepStart = false;
-                        totalVersesNeeded = pace;
-                        chapterDisplayStart = (chapterCount + 1);
-                    }
                 }
-
             }
-        }
-        if (totalVersesNeeded > 0 && totalVersesNeeded < pace) {
-            chapterDisplayEnd = BibleTable[k].chapters.length;
-            verseDisplayEnd = numberVerses;
-            planLines[planOutputsCount] = BibleTable[k].abbr + ' ' + chapterDisplayStart + ':' + verseDisplayStart + ' - ' + chapterDisplayEnd + ':' + verseDisplayEnd;
-            planLinks[planOutputsCount] = '<a href=\"https://www.esv.org/' + BibleTable[k].book + '+' + chapterDisplayStart + ':' + verseDisplayStart + '\">' + planLines[planOutputsCount] + '</a>';
+            if (totalVersesNeeded > 0 && totalVersesNeeded < pace) {
+                chapterDisplayEnd = BibleTable[k].chapters.length;
+                verseDisplayEnd = numberVerses;
+
+                planObjs[planOutputsCount] = {
+                    bookIndex: k,
+                    chapterStart: chapterDisplayStart,
+                    verseStart: verseDisplayStart,
+                    chapterEnd: chapterDisplayEnd,
+                    verseEnd: verseDisplayEnd
+                };
+                SetData(planOutputsCount);            
+            }
+
+            // Create anchor tags with following and have a checkbox with each one
+            //https://www.esv.org/Matthew+5:1/
+
+            //document.getElementById('plan').value = planLines.join('\r\n');
+            document.getElementById('output').innerHTML = planLines.join('</br>');
+            document.getElementById('openPassage').innerHTML = planLinks[0];
+            breaddb.transaction('prog', 'readwrite').objectStore('prog').add(planObjs);
         }
 
-        // Create anchor tags with following and have a checkbox with each one
-        //https://www.esv.org/Matthew+5:1/
-
-        //document.getElementById('plan').value = planLines.join('\r\n');
-        document.getElementById('output').innerHTML = planLinks.join('</br>');
-        document.getElementById('dvSavedReading').classList.remove('hidden');
-        breaddb.transaction('prog', 'readwrite').objectStore('prog').add(planLinks);
-    }
+        function SetData(count) {        
+            planLines[count] = BibleTable[planObjs[count].bookIndex].abbr + ' ' + planObjs[count].chapterStart + ':' + planObjs[count].verseStart + ' - ' + planObjs[count].chapterEnd + ':' + planObjs[count].verseEnd;
+            planLinks[count] = '<a href=\"https://www.esv.org/' + BibleTable[planObjs[count].bookIndex].book + '+' + planObjs[count].chapterStart + ':' + planObjs[count].verseStart + '\">Open in ESV</a>';
+            planLines[count] = '<option>' + planLines[count] + '</option>';
+        }        
     </script>
+    
 </body>
 </html>
