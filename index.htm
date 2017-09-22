@@ -513,7 +513,7 @@
             var numberVerses = 0;
             var carryoverNumber = 0;
             var chapterDisplayStart, chapterDisplayEnd, verseDisplayStart, verseDisplayEnd;
-
+            var areEndVersesInChapter = false;
             var totalVersesNeeded = pace;
             //for (var k = 0; k < 1; k++) {
             var k = document.getElementById('selBooks').selectedIndex;
@@ -526,6 +526,7 @@
                 numberVerses = parseInt(BibleTable[k].chapters[chapterCount]);
 
                 totalVersesNeeded = totalVersesNeeded + carryoverNumber;
+                carryoverNumber = 0;
 
                 if (totalVersesNeeded > numberVerses) {
                     totalVersesNeeded = totalVersesNeeded - numberVerses;
@@ -537,14 +538,24 @@
                         
                         isThisStartingVerse = false;
                     }
-
-                    carryoverNumber = totalVersesNeeded;
-                    if (carryoverNumber > Math.round(pace * .25)) {
-                        totalVersesNeeded = carryoverNumber;
-                        carryoverNumber = 0;
+                    
+                    // When this is true the amount of verses still needed for the chunk was more than 25% additional and should continue into the next chapter
+                    //  Else this amount of verses still needed for the chunk is small enough that we should just stop the chunk on this chapter
+                    if (totalVersesNeeded > Math.round(pace * .25)) {                                                
+                        areEndVersesInChapter = false;                        
                     }
+                    else {
+                        areEndVersesInChapter = true;
+                        carryoverNumber = totalVersesNeeded;
+                        totalVersesNeeded = numberVerses;                        
+                    }
+
                 }
                 else {
+                    areEndVersesInChapter = true;
+                }
+
+                if (areEndVersesInChapter) {
 
                     //alert(numberVerses);
                     
@@ -571,10 +582,10 @@
                         
                             // Thus, this verse is the END of reading chunk!
                             verseDisplayEnd = (chap + totalVersesNeeded);
-
+                            
 
                             // Are (numberVerses - chap) the max number of verses in this ONE-1 chapter <= 125% the pace
-                            if ((numberVerses - chap) <= Math.round(pace * 1.25)) {
+                            if (((numberVerses - verseDisplayEnd) > 0) && ((numberVerses + carryoverNumber) - chap) <= Math.round(pace * 1.25)) {
 
                                 // Take *additional* 25% or less and include rest of this ONE-1 chapter in reading chunk
                                 //  Thus, calculated carry over amount is a negative value
