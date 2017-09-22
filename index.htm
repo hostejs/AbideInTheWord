@@ -8,7 +8,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-         
         /*! excerpts from normalize.css v3.0.1 | MIT License | git.io/normalize */
         /**
          * default margin.
@@ -17,7 +16,7 @@
             margin: 1px;
         }
 
-        
+
         /* Links
            ========================================================================== */
         /**
@@ -27,7 +26,7 @@
         a:hover {
             outline: 0;
         }
-        
+
         /**
          * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
          */
@@ -35,7 +34,7 @@
         strong {
             font-weight: bold;
         }
-        
+
         /**
          * Address differences between Firefox and other browsers.
          */
@@ -105,22 +104,22 @@
             /* 3 */
         }
 
-        /**
+         /**
          * Re-set default cursor for disabled elements.
          */
-        button[disabled],
-        html input[disabled] {
-            cursor: default;
-        }
+            button[disabled],
+            html input[disabled] {
+                cursor: default;
+            }
 
-        /**
+         /**
          * Remove inner padding and border in Firefox 4+.
          */
-        button::-moz-focus-inner,
-        input::-moz-focus-inner {
-            border: 0;
-            padding: 0;
-        }
+            button::-moz-focus-inner,
+            input::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
 
         /**
          * Address Firefox 4+ setting `line-height` on `input` using `!important` in
@@ -145,12 +144,12 @@
             font-size: 1rem;
             margin-bottom: 1.3rem;
         }
-        
+
         *, *::after, *::before {
             box-sizing: border-box;
         }
 
-        
+
         @media screen and (min-width: 32rem) and (max-width: 48rem) {
             html {
                 font-size: 15px;
@@ -169,19 +168,19 @@
             line-height: 1.6;
             color: #333;
         }
-                        
+
         .flt--left {
             float: left;
         }
-                        
+
         a {
             color: #3498db;
         }
 
-        a:hover, a:focus, a:active {
-            color: #217dbb;
-        }
-               
+            a:hover, a:focus, a:active {
+                color: #217dbb;
+            }
+
         .btn--add {
             border-color: #2791d9;
             background-color: #3498db;
@@ -189,10 +188,10 @@
             border-radius: 3px;
         }
 
-        .btn--add:hover, .btn--add:focus, .btn--add:active {
-            color: #fff;
-            background-color: #217dbb;
-        }
+            .btn--add:hover, .btn--add:focus, .btn--add:active {
+                color: #fff;
+                background-color: #217dbb;
+            }
 
         .btn--done {
             border-color: #22a978;
@@ -201,19 +200,19 @@
             border-radius: 3px;
         }
 
-        .btn--done:hover, .btn--done:focus, .btn--done:active {
-            color: #fff;
-            background-color: #1d8f66;
-        }
+            .btn--done:hover, .btn--done:focus, .btn--done:active {
+                color: #fff;
+                background-color: #1d8f66;
+            }
 
         #selBooks,
-        #output{
+        #output {
             padding: .5rem;
             margin-bottom: .5rem;
             display: block;
             width: 100%;
             box-shadow: none;
-            border: thin solid rgba(216, 216, 216, 0.99);            
+            border: thin solid rgba(216, 216, 216, 0.99);
         }
 
         input {
@@ -224,32 +223,30 @@
             box-shadow: none;
             border: thin solid rgba(216, 216, 216, 0.99);
         }
-        
+
         .msg {
             background-color: #ffde37;
             border-radius: .5rem;
             font-size: 12px;
             font-weight: bold;
-
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-            width:100%;
-
-            float:left;
+            width: 100%;
+            float: left;
         }
 
-        .msg:hover{            
-            white-space:normal;
-            overflow: initial;
-        }
+            .msg:hover {
+                white-space: normal;
+                overflow: initial;
+            }
 
         .hidden {
             display: none;
         }
 
         .field {
-            padding: 0 0.35em 0 0.35em;            
+            padding: 0 0.35em 0 0.35em;
         }
 
         .tooltip {
@@ -257,46 +254,48 @@
             position: relative;
         }
 
-        .tooltip:hover:after {
-            background: #333;
-            background: rgba(0,0,0,.8);
-            border-radius: 5px;
-            top: 31px;
-            color: #fff;
-            content: attr(data-tip);
-            right: 1px;
-            padding: 5px 15px;
-            position: absolute;
-            z-index: 98;
-            width: 220px;
-            font-size: 12px;
-            font-weight: bold;
-        }
+            .tooltip:hover:after {
+                background: #333;
+                background: rgba(0,0,0,.8);
+                border-radius: 5px;
+                top: 31px;
+                color: #fff;
+                content: attr(data-tip);
+                right: 1px;
+                padding: 5px 15px;
+                position: absolute;
+                z-index: 98;
+                width: 220px;
+                font-size: 12px;
+                font-weight: bold;
+            }
 
-        .tooltip:hover:before {
-            border: solid;
-            border-color: #333 transparent;
-            border-width: 0px 6px 6px 6px;
-            top: 25px;
-            content: "";
-            right: 25px;
-            position: absolute;
-            z-index: 99;
-        }
+            .tooltip:hover:before {
+                border: solid;
+                border-color: #333 transparent;
+                border-width: 0px 6px 6px 6px;
+                top: 25px;
+                content: "";
+                right: 25px;
+                position: absolute;
+                z-index: 99;
+            }
 
-        label{
+        label {
             font-weight: 500;
         }
 
-        .verse{
+        .verse {
             font-style: italic;
         }
-        .verse span{
-            padding-left:1em;
-        }
-        .verse span ~ span{
-            padding-left:15em;
-        }
+
+            .verse span {
+                padding-left: 1em;
+            }
+
+                .verse span ~ span {
+                    padding-left: 15em;
+                }
     </style>
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700' rel='stylesheet' type='text/css'>
@@ -304,14 +303,11 @@
 <body onload="Initializer();">
     <div class="verse">
         <span>
-            ...if you abide in my word, you are truly my disciples,
-        </span><br />
-        <span>
-            and you will know the truth, and the truth will set you free. -John 8:31-32
+            ...if you abide in my word, you are truly my disciples, and you will know the truth, and the truth will set you free. -John 8:31-32
         </span>
     </div>
-    
-    <form>        
+
+    <form>
         <div class="flt--left">
             <div class="field flt--left">
                 <label for="selBooks">Books</label>
@@ -384,17 +380,17 @@
                     <option>Rev</option>
                 </select>
             </div>
-            <div class="field flt--left">                    
+            <div class="field flt--left">
                 <label for="txtNumVerses">
                     Verses per passage <a class="tooltip" data-tip="An average; 85 gives Bible-in-a-year">*</a>
                 </label>
-                <input type="number" id="txtNumVerses" value="85" min="1" max="9999" maxlength="4" onkeypress="javascript: if (this.value.length >= this.maxLength) { event.preventDefault(); return false; } if (event.keyCode == 13 || event.keyCode == 45 || event.keyCode == 46 || event.keyCode == 69 || event.keyCode == 101 || event.keyCode == 32) { event.preventDefault(); return false; }" />                    
+                <input type="number" id="txtNumVerses" value="85" min="1" max="9999" maxlength="4" onkeypress="javascript: if (this.value.length >= this.maxLength) { event.preventDefault(); return false; } if (event.keyCode == 13 || event.keyCode == 45 || event.keyCode == 46 || event.keyCode == 69 || event.keyCode == 101 || event.keyCode == 32) { event.preventDefault(); return false; }" />
             </div>
             <div>
                 <input type="button" value="Add to Reading List" class="btn--add" onclick="AddToReadingList();" />
             </div>
 
-            <div id="savedReading">                
+            <div id="savedReading">
                 <div class="field">
                     <label for="output">
                         Reading List
@@ -404,10 +400,10 @@
                 <div id="openPassage" class="field">
                 </div>
                 <div>
-                    <input type="button" value="Done Reading" class="btn--done" onclick="RemovePassage();" disabled="disabled"/>
+                    <input type="button" value="Done Reading" class="btn--done" onclick="RemovePassage();" disabled="disabled" />
                 </div>
             </div>
-        </div>                
+        </div>
     </form>
     <div class="msg hidden" id="savedDataMessage">
         *Note: This page relies on browser storage to save the reading list. Your browser currently does not make a promise to protect your saved list when available space is low and it may clear storage without warning. Your browser might make it possible to prevent this simply by making this page a bookmark/favorite. <a href="https://developers.google.com/web/updates/2016/06/persistent-storage" target="_blank">See post for details</a>
@@ -483,12 +479,12 @@
             breaddb.transaction('prog', 'readwrite').objectStore('prog').clear();
         }
 
-        function RemovePassage() {            
+        function RemovePassage() {
             var output = document.getElementById('output');
             window.planObjs.splice(output.selectedIndex, 1);
             window.planLinks.splice(output.selectedIndex, 1);
             window.planLines.splice(output.selectedIndex, 1);
-            
+
             if (window.planObjs.length > 0) {
                 document.getElementById('output').innerHTML = window.planLines.join('</br>');
                 document.getElementById('openPassage').innerHTML = window.planLinks[output.selectedIndex];
@@ -511,36 +507,48 @@
                 pace = yearPace;
                 document.getElementById('txtNumVerses').value = yearPace;
             }
-            
+
             var planOutputsCount = planObjs.length;
             var chap = 0;
             var numberVerses = 0;
-            var leftoverNumber = 0;
+            var carryoverNumber = 0;
             var chapterDisplayStart, chapterDisplayEnd, verseDisplayStart, verseDisplayEnd;
 
             var totalVersesNeeded = pace;
             //for (var k = 0; k < 1; k++) {
             var k = document.getElementById('selBooks').selectedIndex;
-            var keepStart = false;
+            var isThisStartingVerse = true;
+                        
             //alert(k);
 
             for (var chapterCount = 0; chapterCount < BibleTable[k].chapters.length; chapterCount++) {
                 chap = 0;
                 numberVerses = parseInt(BibleTable[k].chapters[chapterCount]);
 
+                totalVersesNeeded = totalVersesNeeded + carryoverNumber;
+
                 if (totalVersesNeeded > numberVerses) {
                     totalVersesNeeded = totalVersesNeeded - numberVerses;
                                         
-                    if (!keepStart) {
+                    if (isThisStartingVerse) {
+                        // start the reading chunk WHERE (numberVerses) length of this chapter < (*pace*) number of verses being read
                         chapterDisplayStart = (chapterCount + 1);
                         verseDisplayStart = 1;
-                        keepStart = true;
+                        
+                        isThisStartingVerse = false;
+                    }
+
+                    carryoverNumber = totalVersesNeeded;
+                    if (carryoverNumber > Math.round(pace * .25)) {
+                        totalVersesNeeded = carryoverNumber;
+                        carryoverNumber = 0;
                     }
                 }
                 else {
 
                     //alert(numberVerses);
-                    if (!keepStart) {
+                    
+                    if (isThisStartingVerse){
                         chapterDisplayStart = (chapterCount + 1);
                     }
 
@@ -548,43 +556,69 @@
 
                     while (chap < numberVerses) {
 
-                        if (!keepStart) {
-                            // Assign the start verse
+                        // Iterate the verses in this ONE-1 chapter only
+
+
+                        //  Start the reading chunk WHERE (totalVersesNeeded) number of verses being read <= (numberVerses) length of this chapter
+                        if (isThisStartingVerse) { 
                             verseDisplayStart = chap + 1;
                         }
-                        // Assign the end verse
-                        if ((chap + totalVersesNeeded) <= numberVerses) {
-                            verseDisplayEnd = (chap + totalVersesNeeded);
-                        }
-                        else {
-                            verseDisplayEnd = numberVerses;
 
-                            if (chapterCount < (BibleTable[k].chapters.length - 1)) {
-                                // Are number of verses to be read 25% or less the pace
-                                if ((numberVerses - chap) <= Math.round(pace * .25)) {
-                                    totalVersesNeeded = totalVersesNeeded - (numberVerses - chap);
-                                    chap = numberVerses;
-                                    keepStart = true;
-                                    break;
-                                }
+                        
+                        if ((chap + totalVersesNeeded) <= numberVerses) {
+
+                            // (numberVerses) length of this chapter > number of verses assigned to reading chunk(s) so far
+                        
+                            // Thus, this verse is the END of reading chunk!
+                            verseDisplayEnd = (chap + totalVersesNeeded);
+
+
+                            // Are (numberVerses - chap) the max number of verses in this ONE-1 chapter <= 125% the pace
+                            if ((numberVerses - chap) <= Math.round(pace * 1.25)) {
+
+                                // Take *additional* 25% or less and include rest of this ONE-1 chapter in reading chunk
+                                //  Thus, calculated carry over amount is a negative value
+                                verseDisplayEnd = numberVerses;
+
+                                carryoverNumber = -1 * (numberVerses - chap - totalVersesNeeded);
+                                chap = numberVerses;                                                                
                             }
                         }
+                        else {
 
+                            verseDisplayEnd = numberVerses;
+
+
+                            carryoverNumber = (chap + totalVersesNeeded) - numberVerses;
+                            if (carryoverNumber > Math.round(pace * .25)) {
+                                totalVersesNeeded = carryoverNumber;
+                                carryoverNumber = 0;                                
+                                isThisStartingVerse = false;
+                                break;
+                            }
+                                                        
+                        }
+
+                        /**
+                         * This section is what outputs the reading chunk
+                         */
                         planObjs[planOutputsCount] = {
-                            bookIndex: k,                        
+                            bookIndex: k,
                             chapterStart: chapterDisplayStart,
                             verseStart: verseDisplayStart,
                             chapterEnd: chapterDisplayEnd,
                             verseEnd: verseDisplayEnd
                         };
-                        SetData(planOutputsCount);                    
+                        SetData(planOutputsCount);
                         planOutputsCount++;
 
+
+                        // Increment number of verses in this ONE-1 chapter that have been assigned to read already
                         chap = chap + totalVersesNeeded;
 
-                        if (keepStart) {
-                            keepStart = false;
-                            totalVersesNeeded = pace;
+                        totalVersesNeeded = pace;
+                        if (!isThisStartingVerse) {
+                            isThisStartingVerse = true;                            
                             chapterDisplayStart = (chapterCount + 1);
                         }
                     }
@@ -602,7 +636,7 @@
                     chapterEnd: chapterDisplayEnd,
                     verseEnd: verseDisplayEnd
                 };
-                SetData(planOutputsCount);            
+                SetData(planOutputsCount);
             }
 
             // Create anchor tags with following and have a checkbox with each one
@@ -615,12 +649,12 @@
             breaddb.transaction('prog', 'readwrite').objectStore('prog').add(planObjs);
         }
 
-        function SetData(count) {        
+        function SetData(count) {
             planLines[count] = BibleTable[planObjs[count].bookIndex].abbr + ' ' + planObjs[count].chapterStart + ':' + planObjs[count].verseStart + ' - ' + planObjs[count].chapterEnd + ':' + planObjs[count].verseEnd;
             planLinks[count] = '<a target=\"_blank\" href=\"https://www.esv.org/' + BibleTable[planObjs[count].bookIndex].book + '+' + planObjs[count].chapterStart + ':' + planObjs[count].verseStart + '\">Open in ESV</a>';
             planLines[count] = '<option>' + planLines[count] + '</option>';
-        }        
+        }
     </script>
-    
+
 </body>
 </html>
