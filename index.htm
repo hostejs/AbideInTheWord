@@ -410,7 +410,7 @@
         </div>                
     </form>
     <div class="msg hidden" id="savedDataMessage">
-        *Note: This page relies on browser storage to save the reading list. Your browser currently does not make a promise to protect your saved list when available space is low and it may clear storage without warning. Your browser might make it possible to prevent this simply by making this page a bookmark/favorite. <a href="">See post for details</a>
+        *Note: This page relies on browser storage to save the reading list. Your browser currently does not make a promise to protect your saved list when available space is low and it may clear storage without warning. Your browser might make it possible to prevent this simply by making this page a bookmark/favorite. <a href="https://developers.google.com/web/updates/2016/06/persistent-storage" target="_blank">See post for details</a>
     </div>
     <script type="text/javascript">
         //https://bootbites.com/articles/adding-google-fonts-your-bootstrap-theme/
@@ -617,7 +617,7 @@
 
         function SetData(count) {        
             planLines[count] = BibleTable[planObjs[count].bookIndex].abbr + ' ' + planObjs[count].chapterStart + ':' + planObjs[count].verseStart + ' - ' + planObjs[count].chapterEnd + ':' + planObjs[count].verseEnd;
-            planLinks[count] = '<a href=\"https://www.esv.org/' + BibleTable[planObjs[count].bookIndex].book + '+' + planObjs[count].chapterStart + ':' + planObjs[count].verseStart + '\">Open in ESV</a>';
+            planLinks[count] = '<a target=\"_blank\" href=\"https://www.esv.org/' + BibleTable[planObjs[count].bookIndex].book + '+' + planObjs[count].chapterStart + ':' + planObjs[count].verseStart + '\">Open in ESV</a>';
             planLines[count] = '<option>' + planLines[count] + '</option>';
         }        
     </script>
