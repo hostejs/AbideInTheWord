@@ -246,7 +246,14 @@
         }
 
         .field {
-            padding: 0 0.5em 0 0.5em;
+            padding: 0 0.35em 0 0.35em;
+        }
+        
+        .gutter-top{
+            padding-top:0.5em; 
+        }
+        .gutter-bot{
+            padding-bottom:0.5em;
         }
 
         .tooltip {
@@ -397,7 +404,7 @@
                     </label>
                     <select id="output" onchange="setOpenPassage();"></select>
                 </div>
-                <div id="openPassage" class="field">
+                <div id="openPassage" class="field gutter-top gutter-bot">
                 </div>
                 <div>
                     <input type="button" value="Done Reading" class="btn--done" onclick="RemovePassage();" disabled="disabled" />
