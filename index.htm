@@ -246,7 +246,7 @@
         }
 
         .field {
-            padding: 0 0.35em 0 0.35em;
+            padding: 0 0.5em 0 0.5em;
         }
 
         .tooltip {
@@ -254,32 +254,32 @@
             position: relative;
         }
 
-            .tooltip:hover:after {
-                background: #333;
-                background: rgba(0,0,0,.8);
-                border-radius: 5px;
-                top: 31px;
-                color: #fff;
-                content: attr(data-tip);
-                right: 1px;
-                padding: 5px 15px;
-                position: absolute;
-                z-index: 98;
-                width: 220px;
-                font-size: 12px;
-                font-weight: bold;
-            }
+        .tooltip:hover:after {
+            background: #333;
+            background: rgba(0,0,0,.8);
+            border-radius: 5px;
+            top: 31px;
+            color: #fff;
+            content: attr(data-tip);
+            right: 1px;
+            padding: 5px 15px;
+            position: absolute;
+            z-index: 98;
+            width: 220px;
+            font-size: 12px;
+            font-weight: bold;
+        }
 
-            .tooltip:hover:before {
-                border: solid;
-                border-color: #333 transparent;
-                border-width: 0px 6px 6px 6px;
-                top: 25px;
-                content: "";
-                right: 25px;
-                position: absolute;
-                z-index: 99;
-            }
+        .tooltip:hover:before {
+            border: solid;
+            border-color: #333 transparent;
+            border-width: 0px 6px 6px 6px;
+            top: 25px;
+            content: "";
+            right: 25px;
+            position: absolute;
+            z-index: 99;
+        }
 
         label {
             font-weight: 500;
@@ -289,13 +289,13 @@
             font-style: italic;
         }
 
-            .verse span {
-                padding-left: 1em;
-            }
+        .verse span {
+            padding-left: 1em;
+        }
 
-                .verse span ~ span {
-                    padding-left: 15em;
-                }
+        .verse span ~ span {
+            padding-left: 15em;
+        }
     </style>
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700' rel='stylesheet' type='text/css'>
